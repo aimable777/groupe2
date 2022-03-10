@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Commandes git</h1>
+    <h2>Git init</h2>
+    <p>On initialise le dépôt (repository) grâce à la commande git init</p>
+
+    <h2>git config</h2>
+    <p>git config permet de définir la configuration de git sur votre machine. Cette commande n'est à utiliser que lorsque vous souhaitez la modifier et non à chaque projet</p>
+    <p>On peut par exemple la première fois faire git config --global (on modifie la configuration au global sur notre machine) user.name "mon nom"</p>
+    <p>git config --global user.email "mon@email.fr" pour changer l'email de l'auteur</p>
+
+    <h2>git add</h2>
+    <p>Permet d'ajouter les nouveaux fichiers (untracked) et les fichiers ayant des changements à la liste des fichiers à ajouter à la nouvelle version</p>
+    <p>La commande utilisée est git add [nom_du_fichier]</p>
+    <p>Une fois utilisée, les fichiers deviennent added</p>
+    <p>git add . est la commande générique qui permet d'ajouter tous les fichiers</p>
+
+    <h2>git commit</h2>
+    <p>Une fois les fichiers ajoutés on utilise git commit pour valider la version à laquelle on ajoute une description</p>
+    <p>La commande est git commit -m "Description"</p>
+
+    <h2>git log</h2>
+    <p>git log permet d'obtenir les log des commit donc l'historique de notre projet</p>
+    <p>Chaque commit a différentes informations: les infos de l'auteur, un id unique et pour le commit le plus récent => (HEAD-> master) qui indique que sur notre branche master la dernière version visible est celle-ci</p>
+
+</body>
+</html>
